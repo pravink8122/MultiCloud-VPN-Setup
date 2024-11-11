@@ -1,18 +1,27 @@
 # MultiCloud-VPN-Setup
 1. Introduction
+
 Objective
+
 This project focuses on deploying a multi-cloud infrastructure utilizing both Google Cloud Platform (GCP) and Amazon Web Services (AWS). By distributing resources across two leading cloud providers, we achieve several objectives:
+
 Enhanced Redundancy: Reduces the risk of downtime by leveraging multiple cloud environments.
+
 Resource Optimization: Utilizes each platform's strengths to optimize resource allocation.
+
 Resilience: Builds failover mechanisms, enhancing the infrastructure's resilience to regional or service-specific outages.
 Scope
+
 The multi-cloud infrastructure setup involves:
+
 Networking Configurations: Establishing secure, isolated networks on both platforms.
+
 Virtual Machine Deployment: Launching instances on GCP and AWS that can operate independently or in tandem.
+
 Load Balancing and Failover: Setting up load balancers and DNS routing to direct traffic seamlessly between the two environments, ensuring uninterrupted service during outages.
 Use Case Overview
 This project is ideal for applications where high availability is a priority, especially in sectors like finance, e-commerce, or healthcare, where downtime could impact business continuity. This demonstration also serves as a guide for using Infrastructure as Code (IaC) practices for rapid deployment, scalability, and resource management in multi-cloud environments.
-2. Tools and Technologies Used
+3. Tools and Technologies Used
 Cloud Platforms
 Google Cloud Platform (GCP): Provides a secure, global, and reliable infrastructure to support multi-cloud strategies. GCP's networking tools allow for effective VPC (Virtual Private Cloud) management, as well as firewall configurations, load balancing, and region-based deployments.
 Amazon Web Services (AWS): Offers a broad suite of cloud services and a mature infrastructure. AWS was selected for its robust networking capabilities, IAM (Identity and Access Management) roles, and extensive range of instance types to handle various workloads.
@@ -25,7 +34,7 @@ IAM Roles and Permissions: Access management is configured to ensure resources a
 Other Requirements
 Cloud Accounts: Active GCP and AWS accounts are essential, with proper billing information configured for each account.
 Permissions: Ensure permissions are in place for VPC setup, instance deployment, and load balancer configuration on each platform.
-3. Project Setup and Configuration
+4. Project Setup and Configuration
 This section provides a step-by-step breakdown of the configuration process for deploying resources across GCP and AWS. Each step includes details on network and instance setup, ensuring consistency and connectivity between the two platforms.
 
 Step 1: Account Setup
